@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6FB4CC8C56499641897E5888 /* Pods_Rates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C89B420CB212FB9BBAD657 /* Pods_Rates.framework */; };
+		A0078BC526BE3A51001009AD /* CryptoCompareEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0078BC426BE3A51001009AD /* CryptoCompareEndPoint.swift */; };
+		A0078BC726BE3C37001009AD /* NetworkError+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0078BC626BE3C37001009AD /* NetworkError+Factory.swift */; };
+		A0078BC926BE3CEE001009AD /* CryptoCompareAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0078BC826BE3CEE001009AD /* CryptoCompareAPI.swift */; };
+		A0078BCB26BE3E83001009AD /* DefaultCryptoCompareAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0078BCA26BE3E83001009AD /* DefaultCryptoCompareAPI.swift */; };
+		A0078BCF26BE3F80001009AD /* FavouritesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0078BCE26BE3F80001009AD /* FavouritesStorage.swift */; };
+		A0078BD226BE407D001009AD /* DefaultFavouritesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0078BD126BE407D001009AD /* DefaultFavouritesStorage.swift */; };
+		A0078BD526BE437C001009AD /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0078BD426BE437C001009AD /* ViewModel.swift */; };
+		A0078BD726BE43B5001009AD /* RatesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0078BD626BE43B5001009AD /* RatesListViewModel.swift */; };
+		A0078BDB26BE444B001009AD /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0078BDA26BE444B001009AD /* AppDIContainer.swift */; };
+		A0078BDF26BE44B7001009AD /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0078BDE26BE44B7001009AD /* AppFlowCoordinator.swift */; };
+		A0078BE226BE4C4A001009AD /* CryptoCompareUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0078BE126BE4C4A001009AD /* CryptoCompareUseCase.swift */; };
+		A0078BE526BE5359001009AD /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0078BE426BE5359001009AD /* RootView.swift */; };
+		A02A5F2C25D3382800922ADE /* UISearchBar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02A5F2B25D3382800922ADE /* UISearchBar+Ext.swift */; };
+		A046BD0025D30F2B00A74A36 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A046BCFF25D30F2B00A74A36 /* UIViewController+Ext.swift */; };
+		A06A2E5225D2971700204DCE /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06A2E5125D2971700204DCE /* EndPoint.swift */; };
+		A06A2E5525D29C0600204DCE /* CryptosListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06A2E5425D29C0600204DCE /* CryptosListResponse.swift */; };
+		A06A2E5825D29D7600204DCE /* CryptoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06A2E5725D29D7600204DCE /* CryptoInfo.swift */; };
+		A06A2E5B25D2A3A400204DCE /* CryptoPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06A2E5A25D2A3A400204DCE /* CryptoPrice.swift */; };
+		A06B635F25D3164700253715 /* PriceHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06B635E25D3164700253715 /* PriceHeaderView.swift */; };
+		A06B636225D31B3A00253715 /* CryptoInfoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06B636125D31B3A00253715 /* CryptoInfoHeaderView.swift */; };
+		A06B636D25D31F6D00253715 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06B636C25D31F6D00253715 /* NetworkError.swift */; };
+		A06B637525D32E4E00253715 /* RatesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06B637425D32E4E00253715 /* RatesListRouter.swift */; };
+		A086796D25D2B2C200E4DE92 /* AddCryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A086796C25D2B2C200E4DE92 /* AddCryptoViewController.swift */; };
+		A086797125D2B2CF00E4DE92 /* AddCryptoRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A086797025D2B2CF00E4DE92 /* AddCryptoRootView.swift */; };
+		A086797A25D2B3FD00E4DE92 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A086797925D2B3FD00E4DE92 /* Colors.swift */; };
+		A086797E25D2B7DD00E4DE92 /* CryptoInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A086797D25D2B7DD00E4DE92 /* CryptoInfoCell.swift */; };
+		A086798125D2BC3300E4DE92 /* AddCryptoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A086798025D2BC3300E4DE92 /* AddCryptoRouter.swift */; };
+		A0A9691E25CEE59C0022E6D0 /* RatesListRootVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9691D25CEE59C0022E6D0 /* RatesListRootVIew.swift */; };
+		A0A9692325CEE5D00022E6D0 /* NiblessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9692225CEE5D00022E6D0 /* NiblessView.swift */; };
+		A0A9692B25CEE60B0022E6D0 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9692A25CEE60B0022E6D0 /* NiblessViewController.swift */; };
+		A0D3221525CF316F009FDDBF /* RateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D3221425CF316F009FDDBF /* RateCell.swift */; };
+		A0D3221925CF32C2009FDDBF /* UIFont+Avenir.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D3221825CF32C2009FDDBF /* UIFont+Avenir.swift */; };
+		A0D3221F25CFF156009FDDBF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D3221E25CFF156009FDDBF /* NetworkManager.swift */; };
+		A0D3224D25CFF34C009FDDBF /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D3224C25CFF34C009FDDBF /* AlertMessage.swift */; };
+		A0EC188625CEE2F800307988 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EC188525CEE2F800307988 /* AppDelegate.swift */; };
+		A0EC188F25CEE2FA00307988 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0EC188E25CEE2FA00307988 /* Assets.xcassets */; };
+		A0EC189225CEE2FA00307988 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0EC189025CEE2FA00307988 /* LaunchScreen.storyboard */; };
+		A0EC18E225CEE4F500307988 /* RatesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EC18E125CEE4F500307988 /* RatesListViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00FFFA6864F983A5E171CB55 /* Pods-Rates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rates.debug.xcconfig"; path = "Target Support Files/Pods-Rates/Pods-Rates.debug.xcconfig"; sourceTree = "<group>"; };
+		092A4FF5F11A07719584DE1C /* Pods-Rates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rates.release.xcconfig"; path = "Target Support Files/Pods-Rates/Pods-Rates.release.xcconfig"; sourceTree = "<group>"; };
+		14C89B420CB212FB9BBAD657 /* Pods_Rates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0078BC426BE3A51001009AD /* CryptoCompareEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCompareEndPoint.swift; sourceTree = "<group>"; };
+		A0078BC626BE3C37001009AD /* NetworkError+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkError+Factory.swift"; sourceTree = "<group>"; };
+		A0078BC826BE3CEE001009AD /* CryptoCompareAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCompareAPI.swift; sourceTree = "<group>"; };
+		A0078BCA26BE3E83001009AD /* DefaultCryptoCompareAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCryptoCompareAPI.swift; sourceTree = "<group>"; };
+		A0078BCE26BE3F80001009AD /* FavouritesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesStorage.swift; sourceTree = "<group>"; };
+		A0078BD126BE407D001009AD /* DefaultFavouritesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFavouritesStorage.swift; sourceTree = "<group>"; };
+		A0078BD426BE437C001009AD /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A0078BD626BE43B5001009AD /* RatesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesListViewModel.swift; sourceTree = "<group>"; };
+		A0078BDA26BE444B001009AD /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		A0078BDE26BE44B7001009AD /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
+		A0078BE126BE4C4A001009AD /* CryptoCompareUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCompareUseCase.swift; sourceTree = "<group>"; };
+		A0078BE426BE5359001009AD /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		A02A5F2B25D3382800922ADE /* UISearchBar+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Ext.swift"; sourceTree = "<group>"; };
+		A046BCFF25D30F2B00A74A36 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		A06A2E5125D2971700204DCE /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		A06A2E5425D29C0600204DCE /* CryptosListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptosListResponse.swift; sourceTree = "<group>"; };
+		A06A2E5725D29D7600204DCE /* CryptoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoInfo.swift; sourceTree = "<group>"; };
+		A06A2E5A25D2A3A400204DCE /* CryptoPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoPrice.swift; sourceTree = "<group>"; };
+		A06B635E25D3164700253715 /* PriceHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceHeaderView.swift; sourceTree = "<group>"; };
+		A06B636125D31B3A00253715 /* CryptoInfoHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoInfoHeaderView.swift; sourceTree = "<group>"; };
+		A06B636C25D31F6D00253715 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		A06B637425D32E4E00253715 /* RatesListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesListRouter.swift; sourceTree = "<group>"; };
+		A086796C25D2B2C200E4DE92 /* AddCryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCryptoViewController.swift; sourceTree = "<group>"; };
+		A086797025D2B2CF00E4DE92 /* AddCryptoRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCryptoRootView.swift; sourceTree = "<group>"; };
+		A086797925D2B3FD00E4DE92 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		A086797D25D2B7DD00E4DE92 /* CryptoInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoInfoCell.swift; sourceTree = "<group>"; };
+		A086798025D2BC3300E4DE92 /* AddCryptoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCryptoRouter.swift; sourceTree = "<group>"; };
+		A0A9691D25CEE59C0022E6D0 /* RatesListRootVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesListRootVIew.swift; sourceTree = "<group>"; };
+		A0A9692225CEE5D00022E6D0 /* NiblessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessView.swift; sourceTree = "<group>"; };
+		A0A9692A25CEE60B0022E6D0 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
+		A0D3221425CF316F009FDDBF /* RateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateCell.swift; sourceTree = "<group>"; };
+		A0D3221825CF32C2009FDDBF /* UIFont+Avenir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Avenir.swift"; sourceTree = "<group>"; };
+		A0D3221E25CFF156009FDDBF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A0D3224C25CFF34C009FDDBF /* AlertMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
+		A0EC188225CEE2F800307988 /* Rates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rates.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0EC188525CEE2F800307988 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A0EC188E25CEE2FA00307988 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0EC189125CEE2FA00307988 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0EC189325CEE2FA00307988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0EC18E125CEE4F500307988 /* RatesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesListViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0EC187F25CEE2F800307988 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FB4CC8C56499641897E5888 /* Pods_Rates.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F65FFACF12E63235C873335 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14C89B420CB212FB9BBAD657 /* Pods_Rates.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0078BBA26BE36BC001009AD /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				A0D3220B25CF306E009FDDBF /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		A0078BBB26BE36DB001009AD /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A0078BBC26BE36E0001009AD /* Entities */,
+				A0078BC126BE39A0001009AD /* Interfaces */,
+				A0078BE026BE4BAA001009AD /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A0078BBC26BE36E0001009AD /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A06A2E5425D29C0600204DCE /* CryptosListResponse.swift */,
+				A06A2E5725D29D7600204DCE /* CryptoInfo.swift */,
+				A06A2E5A25D2A3A400204DCE /* CryptoPrice.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		A0078BBD26BE3762001009AD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A0078BD026BE406F001009AD /* Storage */,
+				A0078BC226BE3A32001009AD /* API */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A0078BBE26BE3799001009AD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A0078BC026BE37EE001009AD /* Extensions */,
+				A0078BBF26BE37DD001009AD /* UI */,
+				A0078BD426BE437C001009AD /* ViewModel.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A0078BBF26BE37DD001009AD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A086797425D2B3B500E4DE92 /* Color */,
+				A0A9692125CEE5BE0022E6D0 /* View */,
+				A0A9692925CEE5FB0022E6D0 /* ViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A0078BC026BE37EE001009AD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A0D3221825CF32C2009FDDBF /* UIFont+Avenir.swift */,
+				A02A5F2B25D3382800922ADE /* UISearchBar+Ext.swift */,
+				A046BCFF25D30F2B00A74A36 /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A0078BC126BE39A0001009AD /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				A0078BCD26BE3F11001009AD /* API */,
+				A0078BCC26BE3F0C001009AD /* Storage */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		A0078BC226BE3A32001009AD /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A0078BC326BE3A3F001009AD /* EndPoints */,
+				A0078BCA26BE3E83001009AD /* DefaultCryptoCompareAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A0078BC326BE3A3F001009AD /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				A0078BC426BE3A51001009AD /* CryptoCompareEndPoint.swift */,
+			);
+			path = EndPoints;
+			sourceTree = "<group>";
+		};
+		A0078BCC26BE3F0C001009AD /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				A0078BCE26BE3F80001009AD /* FavouritesStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		A0078BCD26BE3F11001009AD /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A0078BC826BE3CEE001009AD /* CryptoCompareAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A0078BD026BE406F001009AD /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				A0078BD126BE407D001009AD /* DefaultFavouritesStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		A0078BD326BE4332001009AD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A0078BD626BE43B5001009AD /* RatesListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A0078BE026BE4BAA001009AD /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				A0078BE126BE4C4A001009AD /* CryptoCompareUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		A0078BE326BE5202001009AD /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				A06B635E25D3164700253715 /* PriceHeaderView.swift */,
+				A0D3221425CF316F009FDDBF /* RateCell.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		A06A2E5E25D2A9B300204DCE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0078BE326BE5202001009AD /* Subviews */,
+				A0EC18E125CEE4F500307988 /* RatesListViewController.swift */,
+				A0A9691D25CEE59C0022E6D0 /* RatesListRootVIew.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A086796A25D2B2AE00E4DE92 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				A086796B25D2B2B400E4DE92 /* View */,
+				A086796C25D2B2C200E4DE92 /* AddCryptoViewController.swift */,
+				A086798025D2BC3300E4DE92 /* AddCryptoRouter.swift */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		A086796B25D2B2B400E4DE92 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A086797025D2B2CF00E4DE92 /* AddCryptoRootView.swift */,
+				A086797D25D2B7DD00E4DE92 /* CryptoInfoCell.swift */,
+				A06B636125D31B3A00253715 /* CryptoInfoHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A086797425D2B3B500E4DE92 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				A086797925D2B3FD00E4DE92 /* Colors.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		A0A9692125CEE5BE0022E6D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0A9692225CEE5D00022E6D0 /* NiblessView.swift */,
+				A0078BE426BE5359001009AD /* RootView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0A9692925CEE5FB0022E6D0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0A9692A25CEE60B0022E6D0 /* NiblessViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A0D3220B25CF306E009FDDBF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A0D3220C25CF3073009FDDBF /* Model */,
+				A0D3221E25CFF156009FDDBF /* NetworkManager.swift */,
+				A06A2E5125D2971700204DCE /* EndPoint.swift */,
+				A0078BC626BE3C37001009AD /* NetworkError+Factory.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A0D3220C25CF3073009FDDBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A0D3224C25CFF34C009FDDBF /* AlertMessage.swift */,
+				A06B636C25D31F6D00253715 /* NetworkError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0EC187925CEE2F800307988 = {
+			isa = PBXGroup;
+			children = (
+				A0EC188425CEE2F800307988 /* Rates */,
+				A0EC188325CEE2F800307988 /* Products */,
+				DFB5182D6410CC84CB998079 /* Pods */,
+				7F65FFACF12E63235C873335 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A0EC188325CEE2F800307988 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0EC188225CEE2F800307988 /* Rates.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0EC188425CEE2F800307988 /* Rates */ = {
+			isa = PBXGroup;
+			children = (
+				A0EC18BA25CEE3F200307988 /* Application */,
+				A0078BBE26BE3799001009AD /* Common */,
+				A0078BBD26BE3762001009AD /* Data */,
+				A0078BBB26BE36DB001009AD /* Domain */,
+				A0078BBA26BE36BC001009AD /* Infrastructure */,
+				A0EC189A25CEE38400307988 /* Resources */,
+				A0EC18BD25CEE41300307988 /* Presentation */,
+			);
+			path = Rates;
+			sourceTree = "<group>";
+		};
+		A0EC189A25CEE38400307988 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A0EC189325CEE2FA00307988 /* Info.plist */,
+				A0EC188E25CEE2FA00307988 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A0EC18BA25CEE3F200307988 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A0EC188525CEE2F800307988 /* AppDelegate.swift */,
+				A0078BDA26BE444B001009AD /* AppDIContainer.swift */,
+				A0078BDE26BE44B7001009AD /* AppFlowCoordinator.swift */,
+				A0EC189025CEE2FA00307988 /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A0EC18BD25CEE41300307988 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A086796A25D2B2AE00E4DE92 /* Add */,
+				A0EC18E025CEE4DB00307988 /* List */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A0EC18E025CEE4DB00307988 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				A0078BD326BE4332001009AD /* ViewModel */,
+				A06A2E5E25D2A9B300204DCE /* View */,
+				A06B637425D32E4E00253715 /* RatesListRouter.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		DFB5182D6410CC84CB998079 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00FFFA6864F983A5E171CB55 /* Pods-Rates.debug.xcconfig */,
+				092A4FF5F11A07719584DE1C /* Pods-Rates.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0EC188125CEE2F800307988 /* Rates */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0EC189625CEE2FA00307988 /* Build configuration list for PBXNativeTarget "Rates" */;
+			buildPhases = (
+				89138443B059B2D12C81CAB0 /* [CP] Check Pods Manifest.lock */,
+				A0EC187E25CEE2F800307988 /* Sources */,
+				A0EC187F25CEE2F800307988 /* Frameworks */,
+				A0EC188025CEE2F800307988 /* Resources */,
+				0D826054B00F48A8BD0F41B7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rates;
+			productName = Rates;
+			productReference = A0EC188225CEE2F800307988 /* Rates.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0EC187A25CEE2F800307988 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					A0EC188125CEE2F800307988 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = A0EC187D25CEE2F800307988 /* Build configuration list for PBXProject "Rates" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0EC187925CEE2F800307988;
+			productRefGroup = A0EC188325CEE2F800307988 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0EC188125CEE2F800307988 /* Rates */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0EC188025CEE2F800307988 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0EC189225CEE2FA00307988 /* LaunchScreen.storyboard in Resources */,
+				A0EC188F25CEE2FA00307988 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D826054B00F48A8BD0F41B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rates/Pods-Rates-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rates/Pods-Rates-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rates/Pods-Rates-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89138443B059B2D12C81CAB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rates-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0EC187E25CEE2F800307988 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06A2E5B25D2A3A400204DCE /* CryptoPrice.swift in Sources */,
+				A086797A25D2B3FD00E4DE92 /* Colors.swift in Sources */,
+				A086798125D2BC3300E4DE92 /* AddCryptoRouter.swift in Sources */,
+				A0A9691E25CEE59C0022E6D0 /* RatesListRootVIew.swift in Sources */,
+				A06B637525D32E4E00253715 /* RatesListRouter.swift in Sources */,
+				A086797E25D2B7DD00E4DE92 /* CryptoInfoCell.swift in Sources */,
+				A0078BCF26BE3F80001009AD /* FavouritesStorage.swift in Sources */,
+				A0078BCB26BE3E83001009AD /* DefaultCryptoCompareAPI.swift in Sources */,
+				A0078BD726BE43B5001009AD /* RatesListViewModel.swift in Sources */,
+				A0EC18E225CEE4F500307988 /* RatesListViewController.swift in Sources */,
+				A0A9692B25CEE60B0022E6D0 /* NiblessViewController.swift in Sources */,
+				A06A2E5825D29D7600204DCE /* CryptoInfo.swift in Sources */,
+				A02A5F2C25D3382800922ADE /* UISearchBar+Ext.swift in Sources */,
+				A06A2E5225D2971700204DCE /* EndPoint.swift in Sources */,
+				A0078BC726BE3C37001009AD /* NetworkError+Factory.swift in Sources */,
+				A0EC188625CEE2F800307988 /* AppDelegate.swift in Sources */,
+				A046BD0025D30F2B00A74A36 /* UIViewController+Ext.swift in Sources */,
+				A0078BE226BE4C4A001009AD /* CryptoCompareUseCase.swift in Sources */,
+				A0D3221925CF32C2009FDDBF /* UIFont+Avenir.swift in Sources */,
+				A0078BC926BE3CEE001009AD /* CryptoCompareAPI.swift in Sources */,
+				A0D3221F25CFF156009FDDBF /* NetworkManager.swift in Sources */,
+				A086797125D2B2CF00E4DE92 /* AddCryptoRootView.swift in Sources */,
+				A06B635F25D3164700253715 /* PriceHeaderView.swift in Sources */,
+				A0078BD526BE437C001009AD /* ViewModel.swift in Sources */,
+				A0078BC526BE3A51001009AD /* CryptoCompareEndPoint.swift in Sources */,
+				A0A9692325CEE5D00022E6D0 /* NiblessView.swift in Sources */,
+				A0D3221525CF316F009FDDBF /* RateCell.swift in Sources */,
+				A0078BDF26BE44B7001009AD /* AppFlowCoordinator.swift in Sources */,
+				A06B636D25D31F6D00253715 /* NetworkError.swift in Sources */,
+				A0078BDB26BE444B001009AD /* AppDIContainer.swift in Sources */,
+				A06A2E5525D29C0600204DCE /* CryptosListResponse.swift in Sources */,
+				A0078BD226BE407D001009AD /* DefaultFavouritesStorage.swift in Sources */,
+				A0078BE526BE5359001009AD /* RootView.swift in Sources */,
+				A0D3224D25CFF34C009FDDBF /* AlertMessage.swift in Sources */,
+				A06B636225D31B3A00253715 /* CryptoInfoHeaderView.swift in Sources */,
+				A086796D25D2B2C200E4DE92 /* AddCryptoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A0EC189025CEE2FA00307988 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0EC189125CEE2FA00307988 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0EC189425CEE2FA00307988 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0EC189525CEE2FA00307988 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0EC189725CEE2FA00307988 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00FFFA6864F983A5E171CB55 /* Pods-Rates.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6QQ8KTCVV8;
+				INFOPLIST_FILE = Rates/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uz.alphagroup.rates.Rates;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0EC189825CEE2FA00307988 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 092A4FF5F11A07719584DE1C /* Pods-Rates.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6QQ8KTCVV8;
+				INFOPLIST_FILE = Rates/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uz.alphagroup.rates.Rates;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0EC187D25CEE2F800307988 /* Build configuration list for PBXProject "Rates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0EC189425CEE2FA00307988 /* Debug */,
+				A0EC189525CEE2FA00307988 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0EC189625CEE2FA00307988 /* Build configuration list for PBXNativeTarget "Rates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0EC189725CEE2FA00307988 /* Debug */,
+				A0EC189825CEE2FA00307988 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0EC187A25CEE2F800307988 /* Project object */;
+}
